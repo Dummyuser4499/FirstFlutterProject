@@ -1,4 +1,5 @@
-import 'package:demo/SplashScreen.dart';
+import 'package:demo/screens/LoginScreen.dart';
+import 'package:demo/screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -20,15 +21,7 @@ class _MyhomePageState extends State<MyHomePage> {
         } else {
           // Loading is done, return the app:
           return MaterialApp(
-            home: Scaffold(
-              body: Center(
-                  child: Container(
-                    child: Text(
-                      'Loaded',
-                      style: TextStyle(color: Colors.black, fontSize: 14),
-                    ),
-                  )),
-            ),
+            home: LoginScreen()
           );
         }
       },
